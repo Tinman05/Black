@@ -1,16 +1,13 @@
 using UnityEngine;
 
-public class BlackholeUpgradePerSecond : MonoBehaviour
+[CreateAssetMenu(menuName = "Blackhole Upgrade/Blackhole Per Second", fileName = "Blackhole Per Second")]
+public class BlackholeUpgradePerSecond : BlackholeUpgrade
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public override void ApplyUpgrade()
     {
-        
-    }
+        GameObject go = Instantiate(BlackholeManager.instance.BlackholePerSecondObjToSpawn, Vector3.zero, Quaternion.identity);
+        go.GetComponent<BlackholePerSecondTimer>().BlackholePerSecond = UpgradeAmount;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        BlackholeManager.instance.SimpleBlackholePerSecondIncrease(UpgradeAmount);
     }
 }

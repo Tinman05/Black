@@ -1168,10 +1168,22 @@ MonoBehaviour:
   _blackholeObj: {fileID: 1647188643}
   CookieTextPopup: {fileID: 0}
   _backgroundObj: {fileID: 1104616453}
-  _upgradeUIToSpawn: {fileID: 0}
-  _upgradeUIParent: {fileID: 0}
-  BlackholePerSecondObjToSpawn: {fileID: 0}
-  AutoClickerInterval: 1
+  blackholeUpgrades:
+  - {fileID: 11400000, guid: 3b0f1367dc4f5d94c8fc0e00ab480bd5, type: 2}
+  - {fileID: 11400000, guid: 729f4ffe2b614e144a4cac7b129ef131, type: 2}
+  - {fileID: 11400000, guid: 51102258f8ef32848adf4c518356e357, type: 2}
+  - {fileID: 11400000, guid: 2b53138bdfc47e6479c471291f777901, type: 2}
+  - {fileID: 11400000, guid: eae1673d2844e134589438e4f554371e, type: 2}
+  - {fileID: 11400000, guid: 7f36740b10e9be04eaad33f6f29964a3, type: 2}
+  - {fileID: 11400000, guid: 179c4c3299a3f8b40b3445d34f83873e, type: 2}
+  - {fileID: 11400000, guid: b62cf9b8fb05afd4c9f4fb9f22489a4f, type: 2}
+  - {fileID: 11400000, guid: ffa254ab452930c458abcd89a6312a93, type: 2}
+  - {fileID: 11400000, guid: 4a05d1d61decf0d4aa844133a8d50373, type: 2}
+  - {fileID: 11400000, guid: ea5b9595d47bb184f8b0a6679207c4ba, type: 2}
+  - {fileID: 11400000, guid: 09a346eb253884747a382afbe0f5950d, type: 2}
+  _upgradeUIToSpawn: {fileID: 5896241221213251677, guid: b1b8307799410e044b50c380b31be6d5, type: 3}
+  _upgradeUIParent: {fileID: 1845035811}
+  BlackholePerSecondObjToSpawn: {fileID: 4598375760114696870, guid: b856714010ad4394e9bf6986b14ecb21, type: 3}
 --- !u!4 &945357007
 Transform:
   m_ObjectHideFlags: 0
