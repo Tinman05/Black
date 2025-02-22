@@ -18,7 +18,7 @@ public class BlackholeManager : MonoBehaviour
     [SerializeField] private GameObject _backgroundObj;
 
     [Space]
-    public BlackholeUpgrade[] blackholeUpgrades;
+    public BlackholeUpgrade[] Upgrades;
     [SerializeField] private GameObject _upgradeUIToSpawn;
     [SerializeField] private Transform _upgradeUIParent;
     public GameObject BlackholePerSecondObjToSpawn;
@@ -45,9 +45,11 @@ public class BlackholeManager : MonoBehaviour
         MainGameCanvas.SetActive(true);
 
         _initializeUpgrades = GetComponent<InitializeUpgrades>();
-        _initializeUpgrades.Initialized(blackholeUpgrades, _upgradeUIToSpawn, _upgradeUIParent);
+        _initializeUpgrades.Initialized(Upgrades, _upgradeUIToSpawn, _upgradeUIParent);
 
     }
+
+
 
     #region On Blackhole Clicked
 
